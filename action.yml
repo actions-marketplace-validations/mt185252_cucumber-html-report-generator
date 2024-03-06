@@ -1,0 +1,29 @@
+name: 'BDD HTML Report Generator'
+description: 'Takes a bdd report in json format as input & generates a report in html format.'
+inputs:
+  report-theme:
+    default: 'hierarchy'
+    description: 'Theme in which HTML report should be generated'
+    required: false
+  json-file-path:
+    required: true
+    description: "Path to the cucmber report in json format."
+  report-suite-as-scenarios:
+    default: 'true'
+    required: false
+    description: "If true, reports total number of passed/failed scenarios as HEADER supported in the Bootstrap theme."
+  scenario-timestamp:
+    default: 'true'
+    description: 'If true, shows the starting timestamp of each scenario within the title in bootstrap theme'
+    required: false
+  report-metadata:
+    default: "{}"
+    description: 'Metadata to be included in the html report.'
+    required: true
+  failed-summary-report:
+    default: 'true'
+    required: false
+    description: 'A summary report of all failed scenarios will be listed in a grid, which its scenario title, tags, failed step and exception.'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
