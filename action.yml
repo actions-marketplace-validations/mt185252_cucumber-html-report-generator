@@ -1,4 +1,4 @@
-name: 'BDD HTML Report Generator'
+name: 'Cucumber HTML Report Generator'
 description: 'Takes a bdd report in json format as input & generates a report in html format.'
 inputs:
   report-theme:
