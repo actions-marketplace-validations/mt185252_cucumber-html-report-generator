@@ -1,5 +1,8 @@
 name: 'Cucumber HTML Report Generator'
 description: 'Takes a bdd report in json format as input & generates a report in html format.'
+branding:
+  icon: activity
+  color: yellow
 inputs:
   report-theme:
     default: 'hierarchy'
